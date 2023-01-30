@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+          integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+          crossorigin="anonymous" />
+    <script rel="script" src="script.js"></script>
+</head>
+<body>
+<!--    <div id="progress-bar"></div>-->
+    <form name="form1">
+        <h1>Form Example</h1>
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname" id="firstname"><br><br>
+        <label for="middlename">Middle Name:</label>
+        <input type="text" name="middlename" id="middlename"><br><br>
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="lastname" id="lastname"><br><br>
+        <label>
+            Gender :
+        </label><br>
+        <input type="radio" name="gender" value="Male" class="styled-radio"> Male <br>
+        <input type="radio" name="gender" value="Female" class="styled-radio"> Female <br>
+        <input type="radio" name="gender" value="Other" class="styled-radio"> Other
+        <br>
+        <br>
+        <label>
+            Date of Birth :
+        </label>
+        <input type="date" name="dob" id="dob"><br><br>
+        <label>
+            Email :
+        </label>
+        <input type="email" id="email" name="email"/> <br>
+        <br> <br>
+        <label>Courses:</label>
+        <select name="course">
+            <option value="Course">Select a Course</option>
+            <option value="CSBS">CSBS</option>
+            <option value="AI/DS">AI/DS</option>
+            <option value="Computer Engineering">Computer Engineering</option>
+            <option value="MBA Tech">MBA Tech</option>
+            <option value="MBA">MBA</option>
+            <option value="other">Other</option>
+        </select>
+        <br>
+        <br>
+        <label>
+            Languages :
+        </label><br>
+        <input type="checkbox" name="lang" value="English" class="langCheckBox"> English <br>
+        <input type="checkbox" name="lang" value="Hindi" class="langCheckBox"> Hindi <br>
+        <input type="checkbox" name="lang" value="French" class="langCheckBox"> French <br>
+        <input type="checkbox" name="lang" value="German" class="langCheckBox"> German
+        <br>
+        <br>
+        <label>
+            Phone :
+        </label>
+        <input type="text" name="country code"  value="+91" size="3" class="phone-section" readonly>
+        <input type="tel" name="phone" size="15" maxlength="10" class="phone-section"> <br> <br>
+        <label>Address</label>
+        <br>
+        <textarea cols="40" rows="5" name="address">
+        </textarea>
+        <br> <br>
+        <label>
+            Upload Your CV:
+        </label><br>
+        <input type="file" size="30" multiple>
+        <br><br>
+
+        <label>
+            Password:
+        </label>
+        <input type="Password" id="pass" name="pass"> <br>
+<!--        <i class="fa fa-eye-slash" onclick="togglePasswordVisibility()"></i>-->
+        <br><br>
+        <br> <br>
+        <label>
+            Confirm Password:
+        </label>
+        <input type="Password" id="repass" name="repass"> <br> <br>
+        <input type="button" value="Submit" onclick="display()"/>
+<!--        <i class="fa fa-eye-slash" onclick="togglePasswordVisibility()"></i>-->
+        <input type="reset">
+    </form>
+</body>
+</html>
